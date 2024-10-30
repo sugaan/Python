@@ -28,15 +28,15 @@ print(
       Your mission is to find the treasure"""
 )
 
-direction = input("Choose your Direction left or right ")
+direction = input("Choose your Direction left or right ").lower()
 if direction == "right":
     print("Game Over")
 else:
-    action = input("Choose your action swin or wait ")
+    action = input("Choose your action swin or wait ").lower()
     if action == "swim":
         print("Game Over")
     else:
-        door = input("Which Door red, yello or blue ")
+        door = input("Which Door red, yello or blue ").lower()
         if door == "yellow":
             print("You Win!!!")
         else:
