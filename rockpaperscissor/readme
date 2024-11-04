@@ -1,0 +1,23 @@
+## Rules of the Game
+
+The game is played with the following rules:
+- **Rock** crushes **Scissors**
+- **Scissors** cuts **Paper**
+- **Paper** covers **Rock**
+
+Each round results in a **win**, **lose**, or **draw** for the player.
+
+## How to Play
+
+1. Run the Python script in your terminal.
+2. Enter your choice (Rock, Paper, or Scissors).
+3. The computer will also make a random choice.
+4. The game will compare choices and declare the result for each round.
+
+The game continues until you decide to quit.
+
+## Features
+
+- Play against the computer in a simple command-line interface.
+- Track your score across multiple rounds.
+- Built-in validation to ensure valid choices are made.
