@@ -1,0 +1,1 @@
+This is a personal project aimed at extracting data from the Spotify public API and loading it for learning purpose.
