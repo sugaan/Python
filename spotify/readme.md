@@ -1,1 +1,1 @@
-This is a personal project aimed at extracting data from the Spotify public API and loading it for learning purpose.
+This is a personal project aimed at extracting data from the Spotify public API and transforming it and loading it to postgres database. Here we have extracted data for artist Anirudh. Free API limits are applied which is 50 requests per transaction. Data will be converted into python pandas dataframe and then loaded to postgres database.
