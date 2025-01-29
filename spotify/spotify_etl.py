@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
-# Spotify API credentials
+# Spotify API credentials 
 load_dotenv()
 client_id = os.getenv("SPOTIFY_CLIENT_ID")
 client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
