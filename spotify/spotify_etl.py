@@ -4,8 +4,9 @@ import pandas as pd
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
-# Spotify API credentials 
+# Spotify API credentials
 load_dotenv()
 client_id = os.getenv("SPOTIFY_CLIENT_ID")
 client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
@@ -43,4 +44,8 @@ df.to_sql("anirudh_albums", engine, if_exists="replace", index=False)
 
 print("Data loaded to postgres")
 
-#visualize data
+data_frame = pd.read_sql_query("SELECT * FROM anirudh_albums", engine)
+
+# visualize data
+# plot a bar chart of the number of albums by year with streamlit
+st.bar_chart(data_frame.groupby("year")["album_name"].count())
